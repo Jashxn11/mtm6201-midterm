@@ -5,21 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Coffee House</title>
     <meta name="description" content="Welcome to My Coffee House. We craft more than beverages; we curate memories, one flavorful moment at a time.">
-    <link rel="stylesheet" href="main.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/CSS/main.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-<!-- Site header -->
+    
     <header class="site-header">
         <div class="wrapper">
-            <a href="index.html" class="logo-link">
-                <img src="images/" alt="My Coffee House Logo">
+            <a href="index.html" class="header-logo">
+                <img src="/images/my-coffee-shop-logo.svg" alt="My Coffee House logo">
             </a>
             <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Locations</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#locations">Locations</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,116 +32,127 @@
 
     <main id="main-content">
 
-        <section id="hero">
-            <div class="wrapper hero-content">
-                <h1>Experience coffee like never before</h1>
+       <!-- Hero Section  -->
+        <section id="hero" class="hero-section">
+            <div class="wrapper">
+                <h1>Experience coffee like<br>never before</h1>
                 <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
-                <a href="#" class="btn">Explore our menu</a>
+                <a href="#menu" class="button button-primary">Explore our menu</a>
             </div>
         </section>
 
-        <section id="welcome">
+       <!-- Welcome Section  -->
+        <section class="welcome-section">
             <div class="wrapper">
-                <h3>Welcome to My Coffee House</h3>
-                <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
+             <div class="welcome-content">
+                    <p class="subheading">Welcome to My Coffee House</p>
+          <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
             </div>
-        </section>
-
-        <section id="offerings">
-            <div class="wrapper">
-                <div class="section-intro">
-                    <h2>What we Offer</h2>
-                    <h3>Why visit us?</h3>
+              <div class="welcome-grid">
+            <img src="/images/pouring-coffee.jpeg" alt="pouring coffe." class="grid-item-large"> 
+            <img src="/images/three-cups.jpeg" alt="three cups." class="grid-item-small">
+              <img src="/images/smiling-employee.jpeg" alt="smiling smiling-employee." class="grid-item-small">
                 </div>
-                <div class="offerings-grid">
-                    <article class="offering-card">
-                        <img src="images/fair" alt="Trade icon">
+            </div>
+        </section>
+        <!-- Offer Section -->
+        <section class="offer-section">
+            <div class="wrapper">
+   <p class="subheading">What we Offer</p>
+     <h2>Why visit us?</h2>
+                <div class="offer-grid">
+                    <div class="offer-item">
+            <img src="/images/fair-trade.svg" alt="" role="presentation">
                         <h3>Fair Trade Coffee</h3>
-                        <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
-                    </article>
-                    <article class="offering-card">
-                        <img src="images/local-baked-goods.svg" alt="Goods icon">
-                        <h3>Local baked goods</h3>
-                        <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
-                    </article>
-                    <article class="offering-card">
-                        <img src="images/made-with-love.svg" alt="Love icon">
-                        <h3>Made with love</h3>
-                        <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
-                    </article>
+        <p>We build direct relationships with the farmers and producers who help in the development of delicious, sustainable and organic coffee.</p>
+                    </div>
+                    <div class="offer-item">
+      <img src="/images/local-baked-goods.svg" alt="" role="presentation">
+                 <h3>Local baked goods</h3>
+              <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.</p>
+                    </div>
+                    <div class="offer-item">
+             <img src="/images/made-with-love.svg" alt="" role="presentation">
+             <h3>Made with love</h3>
+            <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="menu-cta" class="cta-section">
+     <!-- CTA Section  -->
+        <section id="menu" class="cta-section">
             <div class="wrapper">
-                <h2>Our Menu</h2>
-                <p>Explore what we have to offer you</p>
-                <a href="#" class="btn">Explore our menu</a>
-            </div>
-        </section>
-        
-        <section id="locations-cta" class="cta-section">
-            <div class="wrapper">
-                <h2>Locations</h2>
-                <p>Find your nearest coffee shop</p>
-                <a href="#" class="btn-alt">View Locations</a>
-            </div>
-        </section>
-
-        <section id="about">
-            <div class="wrapper about-content">
-                <div class="about-text">
-                    <h2>About Us</h2>
-                    <h3>Read our story</h3>
-                    <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
-                    <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
-                    <a href="#" class="link">Learn more</a>
+                <div class="cta-column">
+                    <p class="subheading">Our Menu</p>
+ <h2>Explore what we have to offer you</h2>
+                    <a href="#" class="button button-primary">Explore our menu</a>
                 </div>
+                <div id="locations" class="cta-column">
+                    <p class="subheading">Locations</p>
+                    <h2>Find your nearest coffee shop</h2>
+       <a href="#" class="button button-outline">View Locations</a>
+                </div>
+            </div>
+        </section>
+        <!-- About Us Section  -->
+        <section id="about" class="about-section">
+            <div class="wrapper">
                 <div class="about-image">
-                    <img src="images/smiling-employee.jpeg" alt="A smiling employee holding two cups of coffee.">
+                    <img src="/images/about-us.jpeg" alt="Two baristas working together behind a coffee machine in a brightly lit shop.">
+                </div>
+                <div class="about-content">
+                    <p class="subheading">About Us</p>
+  <h2>Read our story</h2>
+     <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with apassion for  quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike.</p>
+   <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
+   <a href="#" class="button button-dark">Learn more</a>
                 </div>
             </div>
         </section>
 
-        <section id="testimonials">
+        <!-- Testimonials Section  -->
+        <section class="testimonials-section">
             <div class="wrapper">
-                <div class="section-intro">
-                    <h2>Testimonials</h2>
-                    <h3>What our customers say about us</h3>
+                <div class="testimonials-header">
+                    <p class="subheading">Testimonials</p>
+                    <h2>What our customers say about us</h2>
                 </div>
                 <div class="testimonials-grid">
                     <article class="testimonial-card">
-                        <img src="images/testimonial-1.jpeg" alt="Headshot of Jane D.">
-                        <blockquote>
-                            <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
-                        </blockquote>
-                        <h4>Jane D., Toronto</h4>
+                        <img src="/images/testimonial-1.jpeg" alt="A smiling woman holding a coffee cup.">
+                        <div class="testimonial-content">
+                            <blockquote>
+         <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly service."</p>
+                     </blockquote>
+                     <footer>Jane D., Toronto</footer>
+                        </div>
                     </article>
                     <article class="testimonial-card">
-                        <img src="images/testimonial-2.jpeg" alt="Headshot of Scott S.">
-                        <blockquote>
-                            <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
-                        </blockquote>
-                        <h4>Scott S., Ottawa</h4>
-                    </article>
-                    <article class="testimonial-card">
-                        <img src="images/testimonial-3.jpeg" alt="Headshot of Susie F.">
-                        <blockquote>
-                            <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
-                        </blockquote>
-                        <h4>Susie F., Ottawa</h4>
-                    </article>
-                </div>
-            </div>
+                        <img src="/images/testimonial-2.jpeg" alt="A smiling man with a beard and a laptop.">
+                        <div class="testimonial-content">
+                            <blockquote>
+    S<p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
+    /blockquote>
+    <footer>Scott S., Ottawa</footer>
+    </div>
+      </article>
+     <article class="testimonial-card">
+            <img src="/images/testimonial-3.jpeg" alt="A smiling woman with glasses and red hair holding a drink.">
+        <div class="testimonial-content">
+            <blockquote>
+            <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
+        /blockquote>
+    <footer>Susie F., Ottawa</footer>
+                        </div>
+            </article>
+          </div>
+    </div>
         </section>
-
-    </main>
+</main>
 
     <footer class="site-footer">
-        <div class="wrapper">
-            <p>© My Coffee Company 2025</p>
-        </div>
+        <p>© Jashanpreet Singh My Coffee Company 2025</p>
     </footer>
 
 </body>
